@@ -22,6 +22,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav me-auto">
+            <audio id="background-audio">
+              <source src="mitski.mp3" type="audio/mpeg" />
+            </audio>
+            <button id="playButton">Play Music</button>
+
+            <script>
+              // Mendapatkan elemen audio dan tombol
+              const audio = document.getElementById("background-audio");
+              const playButton = document.getElementById("playButton");
+
+              // Menambahkan event listener untuk tombol
+              playButton.addEventListener("click", function () {
+                audio.play(); // Memulai pemutaran audio
+                playButton.style.display = "none"; // Menyembunyikan tombol setelah diklik
+              });
+            </script>
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#foto">Photo</a>

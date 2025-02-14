@@ -8,3 +8,23 @@
 #foto {
   background-color: #00ccff;
 }
+/* #playButton {
+  padding: 10px 20px;
+  font-size: 5px;
+  cursor: pointer;
+} */
+#playButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut membulat */
+  transition: background-color 0.3s; /* Efek transisi */
+}
+
+/* Efek hover untuk tombol */
+#playButton:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
